@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D259AB6279540FE00A2C2DD /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D259AB5279540FE00A2C2DD /* CartButton.swift */; };
+		5D259AB82795448A00A2C2DD /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D259AB72795448A00A2C2DD /* CartView.swift */; };
+		5D259ABA2795481500A2C2DD /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D259AB92795481500A2C2DD /* CartManager.swift */; };
+		5D4A1BD62795316200514BEC /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4A1BD52795316200514BEC /* Product.swift */; };
+		5D4A1BD9279533B600514BEC /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4A1BD8279533B600514BEC /* ProductCard.swift */; };
 		5D6B139F2794A62400D7BFD7 /* SweaterShopDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6B139E2794A62400D7BFD7 /* SweaterShopDemoApp.swift */; };
 		5D6B13A12794A62400D7BFD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6B13A02794A62400D7BFD7 /* ContentView.swift */; };
 		5D6B13A32794A62600D7BFD7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D6B13A22794A62600D7BFD7 /* Assets.xcassets */; };
 		5D6B13A62794A62600D7BFD7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D6B13A52794A62600D7BFD7 /* Preview Assets.xcassets */; };
+		5DA6D84527CCA7BC00F0A671 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA6D84427CCA7BC00F0A671 /* ProductRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D259AB5279540FE00A2C2DD /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		5D259AB72795448A00A2C2DD /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		5D259AB92795481500A2C2DD /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		5D4A1BD52795316200514BEC /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		5D4A1BD8279533B600514BEC /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
 		5D6B139B2794A62400D7BFD7 /* SweaterShopDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweaterShopDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D6B139E2794A62400D7BFD7 /* SweaterShopDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweaterShopDemoApp.swift; sourceTree = "<group>"; };
 		5D6B13A02794A62400D7BFD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5D6B13A22794A62600D7BFD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D6B13A52794A62600D7BFD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5DA6D84427CCA7BC00F0A671 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D4A1BD42795312800514BEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5D4A1BD52795316200514BEC /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5D4A1BD72795338900514BEC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5D4A1BD8279533B600514BEC /* ProductCard.swift */,
+				5D259AB5279540FE00A2C2DD /* CartButton.swift */,
+				5DA6D84427CCA7BC00F0A671 /* ProductRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5D4A1BDA2795389200514BEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5D6B13A02794A62400D7BFD7 /* ContentView.swift */,
+				5D259AB72795448A00A2C2DD /* CartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5D6B13922794A62400D7BFD7 = {
 			isa = PBXGroup;
 			children = (
@@ -52,9 +91,12 @@
 			isa = PBXGroup;
 			children = (
 				5D6B139E2794A62400D7BFD7 /* SweaterShopDemoApp.swift */,
-				5D6B13A02794A62400D7BFD7 /* ContentView.swift */,
+				5D4A1BDA2795389200514BEC /* Views */,
+				5D4A1BD72795338900514BEC /* Components */,
+				5D4A1BD42795312800514BEC /* Models */,
 				5D6B13A22794A62600D7BFD7 /* Assets.xcassets */,
 				5D6B13A42794A62600D7BFD7 /* Preview Content */,
+				5D259AB92795481500A2C2DD /* CartManager.swift */,
 			);
 			path = SweaterShopDemo;
 			sourceTree = "<group>";
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D259AB82795448A00A2C2DD /* CartView.swift in Sources */,
 				5D6B13A12794A62400D7BFD7 /* ContentView.swift in Sources */,
+				5D259ABA2795481500A2C2DD /* CartManager.swift in Sources */,
 				5D6B139F2794A62400D7BFD7 /* SweaterShopDemoApp.swift in Sources */,
+				5DA6D84527CCA7BC00F0A671 /* ProductRow.swift in Sources */,
+				5D4A1BD62795316200514BEC /* Product.swift in Sources */,
+				5D4A1BD9279533B600514BEC /* ProductCard.swift in Sources */,
+				5D259AB6279540FE00A2C2DD /* CartButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SweaterShopDemo/Preview Content\"";
@@ -277,13 +326,15 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Bilal.APIPractices.SweaterShopDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BilalAd.SweaterShopDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,6 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SweaterShopDemo/Preview Content\"";
@@ -306,13 +358,15 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Bilal.APIPractices.SweaterShopDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.BilalAd.SweaterShopDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
